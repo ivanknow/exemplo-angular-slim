@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exemplo</title>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-app="exemplo">
+
+<div  ng-controller="ExemploCtrl as exemploCtrl">
+<div style="background:#773322; padding:10px;color:white;">
+<h1>{{exemploCtrl.title}}</h1>
+
+</div>
+<input type="text" ng-model="exemploCtrl.title" />
+<button ng-click="exemploCtrl.pega()">Pega do servidor</button>
+<br>
+
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
